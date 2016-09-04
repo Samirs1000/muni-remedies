@@ -1,3 +1,7 @@
+p{
+	font-family: cursive;
+}
+
 #container {
 	width: 980px;
 	margin-left: auto;
@@ -53,6 +57,7 @@ width: 960px;
 	font-weight: bold;
 	background-color: red;
 }
+/*Selected not working*/
 
 #main {
 	float: right;
@@ -68,13 +73,71 @@ background-color: #a5cde6;
 #footer {
 	clear: both;
 	margin-left: 20px;
-
+	padding-top: 10px;
+}
 h4{
 	color: blue;
-	font-size: 14px;
+	font-size: 16px;
 }
 
-.product{
+p.excuse:hover{
+	color: red;
+}
+
+/*Table layout*/
+
+th, td{	
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+th{
+	background-color: #8Bd343;
+}
+
+table{
+	border: 3px solid black;
+}
+
+td{
+	padding-left: 10px;
+}
+
+tr:nth-child(even){
+	background-color: #red;
+}
+/*stipped colour pattern but not working */
+
+img.test{
+	display: none;
+}
+
+p.one:hover +img.test{
+	display: block;	
+	}
+
+p.one:hover {
+		background-color: lightcyan;
+	}
+
+.btn{
+	display: inline-block;
+    border: none;
+    padding: .6em 1em;
+    text-decoration: none;
+    background: #8BD343;
+    color: #fff;
+    font-size: .8em;
+    font-weight: bold;
+    text-transform: uppercase;
+	}
+
+.btn:hover{
+	background: #93b719;
+	text-decoration: underline;
+}
+
+.remedy{
     width: 300px;
     height: 300px;
     background: #fff;
@@ -82,11 +145,11 @@ h4{
     border-radius: 10px;
     margin-top: 20px;
     padding-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.product a{
+.remedy a{
 	text-decoration: none;
 	color: black;
 }
